@@ -1,0 +1,22 @@
+h1{
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+form{
+    background-color: bisque;
+    border: double;
+    border-radius: 5px;
+    margin: auto;
+
+   
+}
+
+body{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.hide{
+    display: none;
+}

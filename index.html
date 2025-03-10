@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create Your Character</h1>
+    <form action="">
+        <label for="name-input">Name</label>
+        <input type="text" name="" id="name-input">
+        <br>
+
+        <label for="sex-input">Sex</label>
+        <select onchange="sexSelected">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Non-Binary">Non-Binary</option>
+        </select>
+        <br>
+
+        <label for="race-input">Race</label>
+        <select onchange="raceSelected">
+            <option value="Human">Human</option>
+            <option value="Tiefling">Tiefling</option>
+            <option value="Elf	">Elf</option>
+            <option value="Half-Elf">Half-Elf</option>
+            <option value="Dragonborne">Dragonborne</option>
+            <option value="Gnome">Gnome</option>
+        </select>
+        <br>
+
+        <label for="class-input">Class</label>
+        <select onchange="classSelected()" id="classSelector">
+            <option value="Druid">Druid</option>
+            <option value="Barbarian">Barbarian</option>
+            <option value="Warlock">Warlock</option>
+            <option value="Bard">Bard</option>
+            <option value="Sorcerer">Sorcerer</option>
+            <option value="Rouge">Rouge</option>
+        </select>
+        <br>
+
+        <div id="Druid-Start-Weapon" class="hide">
+            <label for="">Starting Weapon:</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Quaterstaff</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Spear</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Daggers</label>
+
+        </div>
+
+        <div id="Barbarian-Start-Weapon" class="hide">
+            <label for="">Starting Weapon:</label>
+            <input type="radio" name="Weapon" id=""> <label for="">GreatAxe</label>
+            <input type="radio" name="Weapon" id=""> <label for="">GreatSword</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Trident</label>
+        </div>
+
+        <div id="Warlock-Start-Spell" class="hide">
+            <label for="">Starting Spell:</label>
+            <input type="radio" name="spells" id=""> <label for="">Eldritch Blast</label>
+            <input type="radio" name="spells" id=""> <label for="">Posion Spray</label>
+            <input type="radio" name="spells" id=""> <label for="">Thunderclap</label>
+        </div>
+
+        <div id="Bard-Start-Weapon" class="hide">
+            <label for="">Starting Weapon:</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Longsword</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Rapier</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Short Bow</label>
+        </div>
+
+        <div id="Sorcerer-Start-Spell" class="hide">
+            <label for="">Starting Spell:</label>
+            <input type="radio" name="spells" id=""> <label for="">Thunderclap</label>
+            <input type="radio" name="spells" id=""> <label for="">Mold Earth</label>
+            <input type="radio" name="spells" id=""> <label for="">Minor IllusionS</label>
+        </div>
+
+        <div id="Rouge-Start-Weapon" class="hide">
+            <label for="">Starting Weapon:</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Daggers</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Light Crossbow</label>
+            <input type="radio" name="Weapon" id=""> <label for="">Rapier</label>
+        </div>
+        
+      
+    </form>
+    <script src="Code/code.js"></script>
+</body>
+</html>
