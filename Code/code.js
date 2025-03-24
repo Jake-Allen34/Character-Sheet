@@ -39,26 +39,6 @@ function classSelected(){
     }
 }
 
-let x;
-let y;
-let z;
-
-document.getElementById("rollButton").onclick = function(){ 
-    x = Math.floor(Math.random() * 20) + 1;
-    y = Math.floor(Math.random() * 20) + 1;
-    z = Math.floor(Math.random() * 20) + 1;
-    a = Math.floor(Math.random() * 20) + 1;
-    b = Math.floor(Math.random() * 20) + 1;
-    c = Math.floor(Math.random() * 20) + 1;
-
-    document.getElementById("Strength").innerHTML = x;
-    document.getElementById("Dexterity").innerHTML = y;
-    document.getElementById("Wisdom").innerHTML = z;
-    document.getElementById("Intelligence").innerHTML = a;
-    document.getElementById("Charisma").innerHTML = b;
-    document.getElementById("Constitution").innerHTML = c;
-}
-
 function handleSubmit(e){
     e.preventDefault();
     let choosenName =document.querySelector("#name-input").value;
@@ -73,12 +53,39 @@ function handleSubmit(e){
     document.querySelector("#hp-output").innerHTML=choosenHP;
     document.querySelector("#sheet").classList.remove("hide");
 
-    let choosenLevel =document.querySelector("#level-input").value;
-    document.querySelector("#level-output").innerHTML=choosenLevel;
+    let choosenLevel =document.querySelector("#race-input").value;
+    document.querySelector("#race-output").innerHTML=choosenLevel;
     document.querySelector("#sheet").classList.remove("hide");
 
-   let choosenAlignment =document.querySelector("#alingment-input").value;
+    let choosenRace =document.querySelector("#level-input").value;
+    document.querySelector("#level-output").innerHTML=choosenRace;
+    document.querySelector("#sheet").classList.remove("hide");
+
+    let choosenAlignment =document.querySelector("#alingment-input").value;
     document.querySelector("#alingment-output").innerHTML=choosenAlignment;
     document.querySelector("#sheet").classList.remove("hide");
 
+    let choosenStrength =document.querySelector("#strength-input").value;
+    document.querySelector("#strength-output").innerHTML=choosenStrength;
+    document.querySelector("#sheet").classList.remove("hide");
+
+    let choosenDexterity =document.querySelector("#dexterity-input").value;
+    document.querySelector("#dexterity-output").innerHTML=choosenDexterity;
+    document.querySelector("#sheet").classList.remove("hide");
+
+    let choosenWisdom =document.querySelector("#wisdom-input").value;
+    document.querySelector("#wisdom-output").innerHTML=choosenWisdom;
+    document.querySelector("#sheet").classList.remove("hide");
+
+    let choosenIntelligence =document.querySelector('#intelligence-input').value;
+    document.querySelector("#intelligence-output").innerHTML=choosenIntelligence;
+    document.querySelector("#sheet").classList.remove("hide");
+
+    let choosenCharisma =document.querySelector('#charisma-input').value;
+    document.querySelector("#charisma-output").innerHTML=choosenCharisma;
+    document.querySelector("#sheet").classList.remove("hide")
+
+    let choosenConstitution =document.querySelector('#constitution-input').value;
+    document.querySelector("#constitution-output").innerHTML=choosenConstitution;
+    document.querySelector("#sheet").classList.remove("hide")
 }

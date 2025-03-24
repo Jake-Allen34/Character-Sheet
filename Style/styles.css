@@ -7,10 +7,13 @@ h1{
 form{
     background-color:bisque;
     border: double;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: auto;
+}
 
-   
+.image-size{
+    height: 30%;
+    width: 30%;
 }
 
 .Have-You-Played{
@@ -39,50 +42,112 @@ h2{
 }
 
 .CharacterSheet{
-    background-color:bisque;
+    background-color:lightslategray;
     border: double;
-    border-radius: 5px;
+    border-style:double; 
+    border-radius: 50px;
     margin: auto;
+    justify-content:center;
+}
 
+.Your-Character{
+    background-color:lightblue;
+    border-radius: 50px;
+    border-style:dashed;
+    padding-left:40%;
+    padding-right:50%;
+    margin: auto;
 }
 
 .Name-Output{
+
+    font-size: larger;
     display: flex;
     justify-content:center
+    
+    
 }
 
 .Sex-Output{
+    font-size: larger;
     display: flex;
     justify-content:center
 }
 
 .Hp-Output{
+    font-size: larger;
     display: flex;
     justify-content:center
 }
 
 .Level-Output{
+    font-size: larger;
     display: flex;
     justify-content:center
 }
 
 .Race-Output{
+    font-size: larger;
     display: flex;
     justify-content:center
 }
 
 .Class-Output{
+    font-size: larger;
+    font-size: larger;
     display: flex;
     justify-content:center
 }
 
 
 .Alingment-Output{
+    font-size: larger;
     display: flex;
     justify-content:center
 }
 
-.Name-Output{
+.Stats{
+    background-color:lightblue;
+    border-radius: 50px;
+    border-style: dashed;
+    padding-left: 40%;
+    padding-right: 50%;
+    margin: auto;
+}
+
+.Strength-Output{
+    font-size: larger;
     display: flex;
     justify-content:center
 }
+
+.Dexterity-Output{
+    font-size: larger;
+    display: flex;
+    justify-content:center
+}
+
+.Wisdom-Output{
+    font-size: larger;
+    display: flex;
+    justify-content:center
+}
+
+.Intelligence-Output{
+    font-size: larger;
+    display: flex;
+    justify-content:center
+}
+
+.Charisma-Output{
+    font-size: larger;
+    display: flex;
+    justify-content:center
+}
+
+.Constitution-Output{
+    font-size: larger;
+    display: flex;
+    justify-content:center
+}
+

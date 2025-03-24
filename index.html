@@ -19,9 +19,9 @@
         <input type="text" name="" id="name-input">
         <br>
 
-        <label id="sex-input" id="sex-input">Sex</label>
+        <label id="sex">Sex</label>
         <select id="sex-input" name="">
-            <option value="Male">Male</option id="sex-input">
+            <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Non-Binary">Non-Binary</option>
         </select>
@@ -37,17 +37,17 @@
         <output>11</output>
         <br>
 
-        <label for="race-input">Race</label>
-        <select onchange="raceSelected">
-            <option value="Human">Human</option>
-            <option value="Tiefling">Tiefling</option>
-            <option value="Elf">Elf</option>
-            <option value="Half-Elf">Half-Elf</option>
-            <option value="Dragonborne">Dragonborne</option>
-            <option value="Gnome">Gnome</option>
-        </select>
+        <label for="race">Race</label>
+       <select id="race-input" name="">
+         <option value="Human">Human</option>
+         <option value="Tiefling">Tiefling</option>
+         <option value="Elf">Elf</option>
+         <option value="Half-Elf">Half-Elf</option>
+         <option value="Dragonborne">Dragonborne</option>
+         <option value="Gnome">Gnome</option>
+       </select>
         <br>
-
+        
         <label for="class-input">Class</label>
         <select onchange="classSelected()" id="classSelector">
             <option value="Druid">Druid</option>
@@ -58,6 +58,8 @@
             <option value="Rouge">Rouge</option>
         </select>
         <br>
+
+        <img src="images/Tiefling.png" class="hide">
 
         <div id="Druid-Start-Weapon" class="hide">
             <label for="">Starting Weapon:</label>
@@ -114,25 +116,29 @@
         <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Chaotic Evil </label>
         
         <h2>Stat Attribution</h2> <!--https://www.youtube.com/watch?v=UZqSpuUJPa0-->
-        <output>Strength</output>
-        <label id="Strength">Strength</label> <br>
+        
+        <label for="Strength">Strength</label>
+        <input type ="number" name="" id="strength-input">
+        <br>
 
-        <output>Dexterity</output>
-        <label id="Dexterity">Dexterity</label> <br>
- 
-        <output>Wisdom</output>
-        <label id="Wisdom">Wisdom</label> <br>
+        <label for="Dexterity">Dexterity</label>
+        <input type ="number" name="" id="dexterity-input">
+        <br>
 
-        <output>Intelligence</output>
-        <label id="Intelligence">Intelligence</label> <br>
+        <label for="Wisdom">Wisdom</label>
+        <input type ="number" name="" id="wisdom-input">
+        <br>
 
-        <output>Charisma</output>
-        <label id="Charisma">Charisma</label> <br>
+        <label for="Intelligence">Intelligence</label>
+        <input type ="number" name="" id="intelligence-input">
+        <br>
 
-        <output>Constitution</output>
-        <label id="Constitution">Constitution</label> <br>
+        <label for="Charisma">Charisma</label>
+        <input type ="number" name="" id="charisma-input">
+        <br>
 
-        <button type="button" id="rollButton">Roll Stats</button>
+        <label for="Constitution">Constitution</label>
+        <input type ="number" name="" id="constitution-input">
         <br>
 
         <button type="button" onclick="handleSubmit(event)">Create Character</button>
@@ -141,7 +147,7 @@
     <br>
 
     <div id="sheet" class="CharacterSheet hide">
-        <h1>Your Character!!!</h1>
+        <h1 class="Your-Character">Your Character:</h1>
 
       <div class="Name-Output">
          <p>Name--</p> 
@@ -167,6 +173,8 @@
          <P>Race--</P>
          <p id="race-output"></p>
        </div>
+       
+       
 
         <div class="Class-Output">
          <P>Class--</P>
@@ -177,6 +185,39 @@
          <P>Alingment--</P>
          <p id="alingment-output"></p>
        </div>
+
+       <h2 class="Stats">Stats Attribution </h2>
+
+       <div class="Strength-Output">
+         <p>Strength Stat--</p>
+         <p id="strength-output"></p>
+       </div>
+
+       <div class="Dexterity-Output">
+         <p>Dexterity Stat--</p>
+         <p id="dexterity-output"></p>
+      </div>
+
+      <div class="Wisdom-Output">
+         <p>Wisdom Stat--</p>
+         <p id="wisdom-output"></p>
+      </div>
+
+      <div class="Intelligence-Output">
+         <p>Intelligence Stat--</p>
+         <p id="intelligence-output"></p>
+      </div>
+
+      <div class="Charisma-Output">
+         <p>Charisma Stat--</p>
+         <p id="charisma-output"></p>
+      </div>
+
+      <div class="Constitution-Output">
+         <p>Constitution Stat--</p>
+         <p id="constitution-output"></p>
+      </div>
+
 
     </div>
 
