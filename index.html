@@ -14,18 +14,28 @@
         <br>
 
         <label for="sex-input">Sex</label>
-        <select onchange="sexSelected">
-            <option value="Male">Male</option>
+        <select for="sexSelected" >
+            <option value="Male">Male</option >
             <option value="Female">Female</option>
             <option value="Non-Binary">Non-Binary</option>
         </select>
+        <br>
+
+        <label for="hp-input">Character Hp</label>
+        <input type="range" value="" min="1" max="15" oninput="this.nextElementSibling.value = this.value" id="hp-input"> <!--https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value-->
+        <output>8</output>
+        <br>
+
+        <label for ="level-input">Character Level</label>
+        <input type="range" value="" min="1" max="20" oninput="this.nextElementSibling.value = this.value" id="level-input"> <!--https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value-->
+        <output>10</output>
         <br>
 
         <label for="race-input">Race</label>
         <select onchange="raceSelected">
             <option value="Human">Human</option>
             <option value="Tiefling">Tiefling</option>
-            <option value="Elf	">Elf</option>
+            <option value="Elf">Elf</option>
             <option value="Half-Elf">Half-Elf</option>
             <option value="Dragonborne">Dragonborne</option>
             <option value="Gnome">Gnome</option>
@@ -76,7 +86,7 @@
             <label for="">Starting Spell:</label>
             <input type="radio" name="spells" id=""> <label for="">Thunderclap</label>
             <input type="radio" name="spells" id=""> <label for="">Mold Earth</label>
-            <input type="radio" name="spells" id=""> <label for="">Minor IllusionS</label>
+            <input type="radio" name="spells" id=""> <label for="">Minor Illusion</label>
         </div>
 
         <div id="Rouge-Start-Weapon" class="hide">
@@ -85,9 +95,68 @@
             <input type="radio" name="Weapon" id=""> <label for="">Light Crossbow</label>
             <input type="radio" name="Weapon" id=""> <label for="">Rapier</label>
         </div>
+
+        <label for="Alingment">Character Alingment:</label>
+        <br>
+        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Lawful Good </label>
+        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Lawful Evil </label>
+        <br>
+        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Neutral Good</label>
+        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Neutral Evil</label>
+        <br>
+        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Chaotic Good </label>
+        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Chaotic Evil </label>
         
+        <h2>Stat Attribution</h2> <!--https://www.youtube.com/watch?v=UZqSpuUJPa0-->
+        <output>Strength</output>
+        <label id="Strength">Strength</label> <br>
+
+        <output>Dexterity</output>
+        <label id="Dexterity">Dexterity</label> <br>
+ 
+        <output>Wisdom</output>
+        <label id="Wisdom">Wisdom</label> <br>
+
+        <output>Intelligence</output>
+        <label id="Intelligence">Intelligence</label> <br>
+
+        <output>Charisma</output>
+        <label id="Charisma">Charisma</label> <br>
+
+        <output>Constitution</output>
+        <label id="Constitution">Constitution</label> <br>
+
+        <button type="button" id="rollButton">Roll Stats</button>
+        <br>
+
+        <button type="button" onclick="handleSubmit(event)">Create Character</button>
       
     </form>
+
+    <div id="sheet" class="CharacterSheet hide">
+        <p>Name</p>
+        <p id="name-output"></p>
+
+        <p>Sex</p>
+        <p id="Sex-output"></p>
+       
+        <P>HP</P>
+        <p id="hp-output"></p>
+
+        <P>Race</P>
+        <p id="race-output"></p>
+
+        <P>Class</P>
+        <p id="class-output"></p>
+
+        <P>Level</P>
+        <p id="level-output"></p>
+
+        <P>Alingment</P>
+        <p id="alingment-output"></p>
+
+    </div>
+
     <script src="Code/code.js"></script>
 </body>
 </html>

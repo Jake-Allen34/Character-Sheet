@@ -20,3 +20,12 @@ body{
 .hide{
     display: none;
 }
+
+h2{
+    padding-left: 40%;
+    padding-right: 50%;
+    font-size: larger;
+    border: double;
+    border-style: dashed;
+    border-radius: 10px;
+}
