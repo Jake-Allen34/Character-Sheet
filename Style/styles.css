@@ -1,15 +1,23 @@
 h1{
     padding-left: 40%;
     padding-right: 40%;
+    
 }
 
 form{
-    background-color: bisque;
+    background-color:bisque;
     border: double;
     border-radius: 5px;
     margin: auto;
 
    
+}
+
+.Have-You-Played{
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: larger;
+   justify-content: ce;
 }
 
 body{
@@ -28,4 +36,53 @@ h2{
     border: double;
     border-style: dashed;
     border-radius: 10px;
+}
+
+.CharacterSheet{
+    background-color:bisque;
+    border: double;
+    border-radius: 5px;
+    margin: auto;
+
+}
+
+.Name-Output{
+    display: flex;
+    justify-content:center
+}
+
+.Sex-Output{
+    display: flex;
+    justify-content:center
+}
+
+.Hp-Output{
+    display: flex;
+    justify-content:center
+}
+
+.Level-Output{
+    display: flex;
+    justify-content:center
+}
+
+.Race-Output{
+    display: flex;
+    justify-content:center
+}
+
+.Class-Output{
+    display: flex;
+    justify-content:center
+}
+
+
+.Alingment-Output{
+    display: flex;
+    justify-content:center
+}
+
+.Name-Output{
+    display: flex;
+    justify-content:center
 }

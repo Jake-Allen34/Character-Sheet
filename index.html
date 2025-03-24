@@ -9,13 +9,19 @@
 <body>
     <h1>Create Your Character</h1>
     <form action="">
+        <div class="Have-You-Played" >
+            <label for="have-you-played">Have you played DND Before?</label>
+            <input type="checkbox" name="" id="">
+        </div>
+        <br>
+        
         <label for="name-input">Name</label>
         <input type="text" name="" id="name-input">
         <br>
 
-        <label for="sex-input">Sex</label>
-        <select for="sexSelected" >
-            <option value="Male">Male</option >
+        <label id="sex-input" id="sex-input">Sex</label>
+        <select id="sex-input" name="">
+            <option value="Male">Male</option id="sex-input">
             <option value="Female">Female</option>
             <option value="Non-Binary">Non-Binary</option>
         </select>
@@ -28,7 +34,7 @@
 
         <label for ="level-input">Character Level</label>
         <input type="range" value="" min="1" max="20" oninput="this.nextElementSibling.value = this.value" id="level-input"> <!--https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value-->
-        <output>10</output>
+        <output>11</output>
         <br>
 
         <label for="race-input">Race</label>
@@ -132,28 +138,45 @@
         <button type="button" onclick="handleSubmit(event)">Create Character</button>
       
     </form>
+    <br>
 
     <div id="sheet" class="CharacterSheet hide">
-        <p>Name</p>
-        <p id="name-output"></p>
+        <h1>Your Character!!!</h1>
 
-        <p>Sex</p>
-        <p id="Sex-output"></p>
-       
-        <P>HP</P>
-        <p id="hp-output"></p>
+      <div class="Name-Output">
+         <p>Name--</p> 
+         <p id="name-output"></p>
+      </div>
 
-        <P>Race</P>
-        <p id="race-output"></p>
+      <div class="Sex-Output">
+         <p>Sex--</p>
+         <p id="sex-output"></p>
+      </div>
+        
+       <div class="Hp-Output">
+         <P>HP--</P>
+         <p id="hp-output"></p>
+       </div>
 
-        <P>Class</P>
-        <p id="class-output"></p>
+       <div class="Level-Output">
+         <P>Level--</P>
+         <p id="level-output"></p>
+      </div>
+        
+       <div class="Race-Output">
+         <P>Race--</P>
+         <p id="race-output"></p>
+       </div>
 
-        <P>Level</P>
-        <p id="level-output"></p>
+        <div class="Class-Output">
+         <P>Class--</P>
+         <p id="class-output"></p>
+        </div>
 
-        <P>Alingment</P>
-        <p id="alingment-output"></p>
+       <div class="Alingment-Output">
+         <P>Alingment--</P>
+         <p id="alingment-output"></p>
+       </div>
 
     </div>
 

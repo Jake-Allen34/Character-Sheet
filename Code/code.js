@@ -65,9 +65,9 @@ function handleSubmit(e){
     document.querySelector("#name-output").innerHTML=choosenName;
     document.querySelector("#sheet").classList.remove("hide");
 
-   // let choosenSex =document.querySelector("#sex-input").value;
-   // document.querySelector("#sex-output").innerHTML=choosenSex;
-   // document.querySelector("#sheet").classList.remove("hide");
+    let choosenSex =document.querySelector("#sex-input").value;
+    document.querySelector("#sex-output").innerHTML=choosenSex;
+    document.querySelector("#sheet").classList.remove("hide");
 
     let choosenHP =document.querySelector("#hp-input").value;
     document.querySelector("#hp-output").innerHTML=choosenHP;
