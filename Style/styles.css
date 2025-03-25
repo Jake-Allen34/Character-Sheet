@@ -11,9 +11,12 @@ form{
     margin: auto;
 }
 
-.image-size{
-    height: 30%;
-    width: 30%;
+img{
+    height: 40%;
+    width: 50%;
+    border: solid black;
+    border-radius: 15px;
+    margin: auto;
 }
 
 .Have-You-Played{
@@ -93,7 +96,6 @@ h2{
 }
 
 .Class-Output{
-    font-size: larger;
     font-size: larger;
     display: flex;
     justify-content:center

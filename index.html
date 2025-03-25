@@ -38,7 +38,7 @@
         <br>
 
         <label for="race">Race</label>
-       <select id="race-input" name="">
+       <select onchange="raceSelected()" name="" id="raceSelector">
          <option value="Human">Human</option>
          <option value="Tiefling">Tiefling</option>
          <option value="Elf">Elf</option>
@@ -47,10 +47,18 @@
          <option value="Gnome">Gnome</option>
        </select>
         <br>
+
+        <img src="images/Human.png" alt="" id="Human" class="hide">
+        <img src="images/Tiefling.png" alt="" id="Tiefling" class="hide">
+        <img src="images/Elf.png" alt="" id="Elf" class="hide">
+        <img src="images/Half elf.png" alt="" id="Half-Elf" class="hide">
+        <img src="images/Dragonbourne.png" alt="" id="Dragonborne" class="hide">
+        <img src="images/Gnome.png" alt="" id="Gnome" class="hide">
+        
+        <br>
         
         <label for="class-input">Class</label>
         <select onchange="classSelected()" id="classSelector">
-            <option value="Druid">Druid</option>
             <option value="Barbarian">Barbarian</option>
             <option value="Warlock">Warlock</option>
             <option value="Bard">Bard</option>
@@ -58,9 +66,6 @@
             <option value="Rouge">Rouge</option>
         </select>
         <br>
-
-        <img src="images/Tiefling.png" class="hide">
-
         <div id="Druid-Start-Weapon" class="hide">
             <label for="">Starting Weapon:</label>
             <input type="radio" name="Weapon" id=""> <label for="">Quaterstaff</label>
@@ -106,14 +111,14 @@
 
         <label for="Alingment">Character Alingment:</label>
         <br>
-        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Lawful Good </label>
-        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Lawful Evil </label>
+        <input type="radio"> <label for ="">Lawful Good </label>
+        <input type="radio" >  <label for ="">Lawful Evil </label>
         <br>
-        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Neutral Good</label>
-        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Neutral Evil</label>
+        <input type="radio" name="Alingment">  <label for ="">Neutral Good</label>
+        <input type="radio" name="Alingment"> <label for ="">Neutral Evil</label>
         <br>
-        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Chaotic Good </label>
-        <input type="radio" name="Alingment" id="alingment-input"> <label for ="">Chaotic Evil </label>
+        <input type="radio" name="Alingment" > <label for ="">Chaotic Good </label>
+        <input type="radio" name="Alingment" > <label for ="">Chaotic Evil </label>
         
         <h2>Stat Attribution</h2> <!--https://www.youtube.com/watch?v=UZqSpuUJPa0-->
         
@@ -174,8 +179,6 @@
          <p id="race-output"></p>
        </div>
        
-       
-
         <div class="Class-Output">
          <P>Class--</P>
          <p id="class-output"></p>

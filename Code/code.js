@@ -39,6 +39,47 @@ function classSelected(){
     }
 }
 
+function raceSelected(){
+    let selectedRace = document.querySelector("#raceSelector").value
+    if(selectedRace == "Tiefling"){
+        document.querySelector("#Tiefling").classList.remove("hide");
+    }
+    else{
+        document.querySelector("#Tiefling").classList.add("hide");
+    }
+    if(selectedRace == "Human"){
+        document.querySelector("#Human").classList.remove("hide");
+    }
+    else{
+        document.querySelector("#Human").classList.add("hide");
+    }
+    if(selectedRace == "Elf"){
+        document.querySelector("#Elf").classList.remove("hide");
+    }
+    else{
+        document.querySelector("#Elf").classList.add("hide");
+    }
+    if(selectedRace == "Half-Elf"){
+        document.querySelector("#Half-Elf").classList.remove("hide");
+    }
+    else{
+        document.querySelector("#Half-Elf").classList.add("hide");
+    }
+    if(selectedRace == "Dragonborne"){
+        document.querySelector("#Dragonborne").classList.remove("hide");
+    }
+    else{
+        document.querySelector("#Dragonborne").classList.add("hide");
+    }
+    if(selectedRace == "Gnome"){
+        document.querySelector("#Gnome").classList.remove("hide");
+    }
+    else{
+        document.querySelector("#Gnome").classList.add("hide");
+    }
+ 
+}
+
 function handleSubmit(e){
     e.preventDefault();
     let choosenName =document.querySelector("#name-input").value;
@@ -53,12 +94,16 @@ function handleSubmit(e){
     document.querySelector("#hp-output").innerHTML=choosenHP;
     document.querySelector("#sheet").classList.remove("hide");
 
-    let choosenLevel =document.querySelector("#race-input").value;
-    document.querySelector("#race-output").innerHTML=choosenLevel;
+    let choosenLevel =document.querySelector("#level-input").value;
+    document.querySelector("#level-output").innerHTML=choosenLevel;
     document.querySelector("#sheet").classList.remove("hide");
 
-    let choosenRace =document.querySelector("#level-input").value;
-    document.querySelector("#level-output").innerHTML=choosenRace;
+    let choosenClass =document.querySelector("#classSelector").value;
+    document.querySelector("#class-output").innerHTML=choosenClass;
+    document.querySelector("#sheet").classList.remove("hide");
+
+    let choosenRace =document.querySelector("#raceSelector").value;
+    document.querySelector("#race-output").innerHTML=choosenRace;
     document.querySelector("#sheet").classList.remove("hide");
 
     let choosenAlignment =document.querySelector("#alingment-input").value;
