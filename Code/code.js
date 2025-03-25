@@ -7,12 +7,6 @@ function classSelected(){
     else{
         document.querySelector("#Barbarian-Start-Weapon").classList.add("hide");
     }
-    if(selectedClass == "Druid"){
-        document.querySelector("#Druid-Start-Weapon").classList.remove("hide");
-    }
-    else{
-        document.querySelector("#Druid-Start-Weapon").classList.add("hide");
-    }
     if(selectedClass == "Warlock"){
         document.querySelector("#Warlock-Start-Spell").classList.remove("hide");
     }
@@ -104,10 +98,6 @@ function handleSubmit(e){
 
     let choosenRace =document.querySelector("#raceSelector").value;
     document.querySelector("#race-output").innerHTML=choosenRace;
-    document.querySelector("#sheet").classList.remove("hide");
-
-    let choosenAlignment =document.querySelector("#alingment-input").value;
-    document.querySelector("#alingment-output").innerHTML=choosenAlignment;
     document.querySelector("#sheet").classList.remove("hide");
 
     let choosenStrength =document.querySelector("#strength-input").value;

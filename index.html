@@ -7,14 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Create Your Character</h1>
     <form action="">
-        <div class="Have-You-Played" >
-            <label for="have-you-played">Have you played DND Before?</label>
-            <input type="checkbox" name="" id="">
-        </div>
-        <br>
-        
+      <h2>Create Your Character</h2 class="Create-Your-Character">
         <label for="name-input">Name</label>
         <input type="text" name="" id="name-input">
         <br>
@@ -59,6 +53,7 @@
         
         <label for="class-input">Class</label>
         <select onchange="classSelected()" id="classSelector">
+            <option value="None">None</option>
             <option value="Barbarian">Barbarian</option>
             <option value="Warlock">Warlock</option>
             <option value="Bard">Bard</option>
@@ -66,13 +61,6 @@
             <option value="Rouge">Rouge</option>
         </select>
         <br>
-        <div id="Druid-Start-Weapon" class="hide">
-            <label for="">Starting Weapon:</label>
-            <input type="radio" name="Weapon" id=""> <label for="">Quaterstaff</label>
-            <input type="radio" name="Weapon" id=""> <label for="">Spear</label>
-            <input type="radio" name="Weapon" id=""> <label for="">Daggers</label>
-
-        </div>
 
         <div id="Barbarian-Start-Weapon" class="hide">
             <label for="">Starting Weapon:</label>
@@ -109,18 +97,8 @@
             <input type="radio" name="Weapon" id=""> <label for="">Rapier</label>
         </div>
 
-        <label for="Alingment">Character Alingment:</label>
-        <br>
-        <input type="radio"> <label for ="">Lawful Good </label>
-        <input type="radio" >  <label for ="">Lawful Evil </label>
-        <br>
-        <input type="radio" name="Alingment">  <label for ="">Neutral Good</label>
-        <input type="radio" name="Alingment"> <label for ="">Neutral Evil</label>
-        <br>
-        <input type="radio" name="Alingment" > <label for ="">Chaotic Good </label>
-        <input type="radio" name="Alingment" > <label for ="">Chaotic Evil </label>
-        
-        <h2>Stat Attribution</h2> <!--https://www.youtube.com/watch?v=UZqSpuUJPa0-->
+
+        <h2>Stat Attribution</h2> 
         
         <label for="Strength">Strength</label>
         <input type ="number" name="" id="strength-input">
@@ -155,69 +133,64 @@
         <h1 class="Your-Character">Your Character:</h1>
 
       <div class="Name-Output">
-         <p>Name--</p> 
+         <p> Character Name--</p> 
          <p id="name-output"></p>
       </div>
 
       <div class="Sex-Output">
-         <p>Sex--</p>
+         <p>Character Sex--</p>
          <p id="sex-output"></p>
       </div>
         
        <div class="Hp-Output">
-         <P>HP--</P>
+         <P>Character HP--</P>
          <p id="hp-output"></p>
        </div>
 
        <div class="Level-Output">
-         <P>Level--</P>
+         <P>Character Level--</P>
          <p id="level-output"></p>
       </div>
         
        <div class="Race-Output">
-         <P>Race--</P>
+         <P>Chosen Race--</P>
          <p id="race-output"></p>
        </div>
        
         <div class="Class-Output">
-         <P>Class--</P>
+         <P>Chosen Class--</P>
          <p id="class-output"></p>
         </div>
-
-       <div class="Alingment-Output">
-         <P>Alingment--</P>
-         <p id="alingment-output"></p>
-       </div>
 
        <h2 class="Stats">Stats Attribution </h2>
 
        <div class="Strength-Output">
-         <p>Strength Stat--</p>
+         <p>Your Strength Stat--</p>
          <p id="strength-output"></p>
        </div>
 
        <div class="Dexterity-Output">
-         <p>Dexterity Stat--</p>
+         <p>Your Dexterity Stat--</p>
          <p id="dexterity-output"></p>
       </div>
 
       <div class="Wisdom-Output">
-         <p>Wisdom Stat--</p>
+         <p>Your Wisdom Stat--</p>
          <p id="wisdom-output"></p>
       </div>
 
       <div class="Intelligence-Output">
-         <p>Intelligence Stat--</p>
+         <p>Your Intelligence Stat--</p>
          <p id="intelligence-output"></p>
       </div>
 
       <div class="Charisma-Output">
-         <p>Charisma Stat--</p>
+         <p>Your Charisma Stat--</p>
          <p id="charisma-output"></p>
       </div>
 
       <div class="Constitution-Output">
-         <p>Constitution Stat--</p>
+         <p>Your Constitution Stat--</p>
          <p id="constitution-output"></p>
       </div>
 
