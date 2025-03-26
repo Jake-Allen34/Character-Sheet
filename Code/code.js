@@ -3,33 +3,46 @@ function classSelected(){
     let selectedClass = document.querySelector("#classSelector").value
     if(selectedClass == "Barbarian"){
         document.querySelector("#Barbarian-Start-Weapon").classList.remove("hide");
+        document.querySelector("#Barbarian").classList.remove("hide")
     }
     else{
         document.querySelector("#Barbarian-Start-Weapon").classList.add("hide");
+        document.querySelector("#Barbarian").classList.add("hide")
     }
     if(selectedClass == "Warlock"){
         document.querySelector("#Warlock-Start-Spell").classList.remove("hide");
+        document.querySelector("#Warlock").classList.remove("hide")
     }
     else{
         document.querySelector("#Warlock-Start-Spell").classList.add("hide");
+        document.querySelector("#Warlock").classList.add("hide")
     }
     if(selectedClass == "Bard"){
         document.querySelector("#Bard-Start-Weapon").classList.remove("hide");
+        document.querySelector("#Bard").classList.remove("hide")
     }
     else{
         document.querySelector("#Bard-Start-Weapon").classList.add("hide");
+        document.querySelector("#Bard").classList.add("hide")
     }
     if(selectedClass == "Sorcerer"){
         document.querySelector("#Sorcerer-Start-Spell").classList.remove("hide");
+        document.querySelector("#Sorcerer").classList.remove("hide")
     }
     else{
         document.querySelector("#Sorcerer-Start-Spell").classList.add("hide");
+        document.querySelector("#Sorcerer").classList.add("hide");
+      
     }
     if(selectedClass == "Rouge"){
         document.querySelector("#Rouge-Start-Weapon").classList.remove("hide");
+        document.querySelector("#Rouge").classList.remove("hide");
+        
     }
     else{
         document.querySelector("#Rouge-Start-Weapon").classList.add("hide");
+        document.querySelector("#Rouge").classList.add("hide")
+      
     }
 }
 
@@ -123,4 +136,6 @@ function handleSubmit(e){
     let choosenConstitution =document.querySelector('#constitution-input').value;
     document.querySelector("#constitution-output").innerHTML=choosenConstitution;
     document.querySelector("#sheet").classList.remove("hide")
+
+    document.querySelector("#sheet").classList.add("fade-in")
 }

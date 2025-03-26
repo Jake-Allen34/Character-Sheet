@@ -12,6 +12,8 @@ img{
     border: solid black;
     border-radius: 15px;
     margin: auto;
+    display: flex;
+    justify-content:center
 }
 
 body{
@@ -32,13 +34,31 @@ h2{
     
 }
 
+.faded-out{
+    opacity: 0;
+}
+.fade-in{
+    animation:  fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .CharacterSheet{
+    box-shadow: 50% 50% black;
     background-color:lightslategray;
     border: double;
     border-style:double; 
     border-radius: 50px;
     margin: auto;
     justify-content:center;
+   
 }
 
 .Your-Character{
