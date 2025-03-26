@@ -26,12 +26,13 @@ body{
 }
 
 h2{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
     background-color: beige;
     border-radius: 50px;
     border-style:dashed;
     padding-left:40%;
     padding-right:50%
-    
 }
 
 .faded-out{
@@ -53,15 +54,17 @@ h2{
 .CharacterSheet{
     box-shadow: 50% 50% black;
     background-color:lightslategray;
-    border: double;
-    border-style:double; 
+    border:darkslategray;
+    border-width: 10px;
+    border-style: solid;
     border-radius: 50px;
     margin: auto;
     justify-content:center;
-   
 }
 
 .Your-Character{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
     background-color:lightblue;
     border-radius: 50px;
     border-style:dashed;
@@ -71,12 +74,9 @@ h2{
 }
 
 .Name-Output{
-
     font-size: larger;
     display: flex;
     justify-content:center
-    
-    
 }
 
 .Sex-Output{
@@ -117,6 +117,8 @@ h2{
 }
 
 .Stats{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
     background-color:lightblue;
     border-radius: 50px;
     border-style: dashed;

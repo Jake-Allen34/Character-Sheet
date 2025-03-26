@@ -32,17 +32,14 @@ function classSelected(){
     else{
         document.querySelector("#Sorcerer-Start-Spell").classList.add("hide");
         document.querySelector("#Sorcerer").classList.add("hide");
-      
     }
     if(selectedClass == "Rouge"){
         document.querySelector("#Rouge-Start-Weapon").classList.remove("hide");
         document.querySelector("#Rouge").classList.remove("hide");
-        
     }
     else{
         document.querySelector("#Rouge-Start-Weapon").classList.add("hide");
         document.querySelector("#Rouge").classList.add("hide")
-      
     }
 }
 
@@ -86,7 +83,7 @@ function raceSelected(){
     }
  
 }
-
+ 
 function handleSubmit(e){
     e.preventDefault();
     let choosenName =document.querySelector("#name-input").value;
@@ -95,47 +92,36 @@ function handleSubmit(e){
 
     let choosenSex =document.querySelector("#sex-input").value;
     document.querySelector("#sex-output").innerHTML=choosenSex;
-    document.querySelector("#sheet").classList.remove("hide");
-
+    
     let choosenHP =document.querySelector("#hp-input").value;
     document.querySelector("#hp-output").innerHTML=choosenHP;
-    document.querySelector("#sheet").classList.remove("hide");
-
+    
     let choosenLevel =document.querySelector("#level-input").value;
     document.querySelector("#level-output").innerHTML=choosenLevel;
-    document.querySelector("#sheet").classList.remove("hide");
-
+    
     let choosenClass =document.querySelector("#classSelector").value;
     document.querySelector("#class-output").innerHTML=choosenClass;
-    document.querySelector("#sheet").classList.remove("hide");
-
+ 
     let choosenRace =document.querySelector("#raceSelector").value;
     document.querySelector("#race-output").innerHTML=choosenRace;
-    document.querySelector("#sheet").classList.remove("hide");
 
     let choosenStrength =document.querySelector("#strength-input").value;
     document.querySelector("#strength-output").innerHTML=choosenStrength;
-    document.querySelector("#sheet").classList.remove("hide");
 
     let choosenDexterity =document.querySelector("#dexterity-input").value;
     document.querySelector("#dexterity-output").innerHTML=choosenDexterity;
-    document.querySelector("#sheet").classList.remove("hide");
-
+   
     let choosenWisdom =document.querySelector("#wisdom-input").value;
     document.querySelector("#wisdom-output").innerHTML=choosenWisdom;
-    document.querySelector("#sheet").classList.remove("hide");
 
     let choosenIntelligence =document.querySelector('#intelligence-input').value;
     document.querySelector("#intelligence-output").innerHTML=choosenIntelligence;
-    document.querySelector("#sheet").classList.remove("hide");
-
+    
     let choosenCharisma =document.querySelector('#charisma-input').value;
     document.querySelector("#charisma-output").innerHTML=choosenCharisma;
-    document.querySelector("#sheet").classList.remove("hide")
-
+   
     let choosenConstitution =document.querySelector('#constitution-input').value;
     document.querySelector("#constitution-output").innerHTML=choosenConstitution;
-    document.querySelector("#sheet").classList.remove("hide")
 
     document.querySelector("#sheet").classList.add("fade-in")
 }
